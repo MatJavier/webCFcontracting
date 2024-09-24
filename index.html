@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CF CONTRACTING LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Enlace a las fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS para el slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Enlace al archivo CSS del slider -->
+<link rel="stylesheet" href="assets/css/slider.css">
+<!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init('your_user_id');  // Reemplaza 'your_user_id' con tu User ID de EmailJS
+   })();
+</script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#home">
+                        <img src="assets/img/logo.svg" alt="CF CONTRACTING LLC">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="#home" data-translate="home">Inicio</a></li>
+                        <li><a href="#about" data-translate="about">Acerca de</a></li>
+                        <li><a href="#services" data-translate="services">Servicios</a></li>
+                        <li><a href="#gallery" data-translate="gallery">Galería</a></li>
+                        <li><a href="#contact" data-translate="contact">Contacto</a></li>
+                    </ul>
+                </nav>
+
+
+                <!-- Botón de cambio de idioma -->
+                <button id="language-toggle" class="language-toggle">English</button>
+                <!-- Botón de menú para móviles -->
+                <div class="menu-toggle" id="mobile-menu-toggle">
+                    <span class="menu-toggle__bar"></span>
+                    <span class="menu-toggle__bar"></span>
+                    <span class="menu-toggle__bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Menú móvil -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="#home" data-translate="home">Inicio</a></li>
+            <li><a href="#about" data-translate="about">Acerca de</a></li>
+            <li><a href="#services" data-translate="services">Servicios</a></li>
+            <li><a href="#gallery" data-translate="gallery">Galería</a></li>
+            <li><a href="#contact" data-translate="contact">Contacto</a></li>
+        </ul>
+    </nav>
+    
+
+    <!--SLIDER-->
+    <div class="slider-wrapper">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="/assets/img/slider/1.jpg" alt="Image 1">
+                <div class="caption">
+                    <h1 data-translate="slider-title-1">Excellence in Every Project</h1>
+                    <p data-translate="slider-desc-1">We strive to exceed expectations with top-quality services.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="/assets/img/slider/2.jpg" alt="Image 2">
+                <div class="caption">
+                    <h1 data-translate="slider-title-2">Tailored Solutions</h1>
+                    <p data-translate="slider-desc-2">Custom solutions that fit your needs and budget.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="/assets/img/slider/3.jpg" alt="Image 3">
+                <div class="caption">
+                    <h1 data-translate="slider-title-3">Expert Professional Team</h1>
+                    <p data-translate="slider-desc-3">Our team delivers safe, high-quality service in every project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+        <!-- Flechas de navegación -->
+        <button class="slider-arrow left">←</button>
+        <button class="slider-arrow right">→</button>
+    
+        <!-- Paginación -->
+        <div class="pagination">
+            <div class="pagination-dot active"></div>
+            <div class="pagination-dot"></div>
+            <div class="pagination-dot"></div>
+        </div>
+    </div>
+    
+
+<!-- Sección Acerca de / CEO -->
+<!-- Sección Hero -->
+<!-- Sección Acerca de / CEO -->
+<section class="about-ceo-section" id="about-section">
+    <div class="container">
+        <div class="row">
+            <!-- Sección "Sobre Nosotros" -->
+            <div class="col-lg-6 col-md-12 about-us">
+                <div class="about-content">
+                    <h2 class="section-title" data-translate="about-title">
+                        About CF CONTRACTING LLC
+                    </h2>
+                    <div class="title-divider"></div>
+                    
+                    <p data-translate="about-desc-1">
+                        We are dedicated to providing comprehensive remodeling and construction solutions...
+                    </p>
+                    
+                    <p data-translate="about-desc-2">
+                        Our team of experts is committed to meeting the needs of our clients...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sección "CEO" -->
+            <div class="col-lg-6 col-md-12 ceo-section">
+                <div class="ceo-card">
+                    <img src="assets/img/about/Avatar.jpeg" alt="CEO Image" class="ceo-image">
+                    <blockquote class="ceo-quote">
+                        <p data-translate="ceo-quote">
+                            A seasoned leader with 15+ years in construction and remodeling...
+                        </p>
+                        <div class="ceo-info">
+                            <h5 class="ceo-name" data-translate="ceo-name">
+                                Cristian Antonio Fernández Valerio
+                            </h5>
+                            <p class="ceo-role" data-translate="ceo-role">CEO</p>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección Servicios -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 data-translate="services-title">Nuestros Servicios</h2>
+            <div class="services__list">
+                <div class="service">
+                    <img src="assets/img//services/1.jpg" alt="Remodelación">
+                    <h3 data-translate="service-1">Remodelación</h3>
+                    <p data-translate="service-desc-1">Damos vida a tus ideas renovando y mejorando cualquier espacio, ya sea residencial o comercial.</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img//services/2.jpg" alt="Instalación de Pisos">
+                    <h3 data-translate="service-2">Instalación de Pisos</h3>
+                    <p data-translate="service-desc-2">Ofrecemos instalación profesional de una amplia variedad de pisos, como madera, vinilo, cerámica y alfombra.</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img//services/3.jpg" alt="Pintura">
+                    <h3 data-translate="service-3">Pintura</h3>
+                    <p data-translate="service-desc-3">Nuestro equipo de pintores profesionales ofrece servicios de pintura interior y exterior.</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img//services/4.jpg" alt="Instalación de Puertas y Ventanas">
+                    <h3 data-translate="service-4">Instalación de Puertas y Ventanas</h3>
+                    <p data-translate="service-desc-4">Instalamos puertas y ventanas de forma eficiente, mejorando la estética y la eficiencia energética de tu hogar.</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img//services/5.jpg" alt="Instalación de Cercas">
+                    <h3 data-translate="service-5">Instalación de Cercas</h3>
+                    <p data-translate="service-desc-5">Instalamos cercas de madera, vinilo y otros materiales duraderos, brindando seguridad y estética.</p>
+                </div>
+                <div class="service">
+                    <img src="assets/img//services/6.jpg" alt="Reparación de Techos">
+                    <h3 data-translate="service-6">Reparación de Techos</h3>
+                    <p data-translate="service-desc-6">Reparamos techos de manera rápida y eficaz, garantizando la integridad estructural y protección contra daños.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Galería -->
+<section class="gallery-section" id="gallery">
+    <div class="container">
+        <div class="gallery-header">
+            <h2 data-translate="gallery-title">Galería</h2>
+        </div>
+
+        <!-- Grid de imágenes -->
+        <div class="gallery-grid">
+            <!-- Imagen 1 -->
+            <div class="gallery-item">
+                <a href="assets/img/gallery/1.jpeg" data-lightbox="gallery" data-title="Gallery Image 1">
+                    <img src="assets/img/gallery/1.jpeg" alt="Gallery Image 1">
+                </a>
+            </div>
+            <!-- Imagen 2 -->
+            <div class="gallery-item">
+                <a href="assets/img/gallery/2.jpeg" data-lightbox="gallery" data-title="Gallery Image 2">
+                    <img src="assets/img/gallery/2.jpeg" alt="Gallery Image 2">
+                </a>
+            </div>
+            <!-- Imagen 3 -->
+            <div class="gallery-item">
+                <a href="assets/img/gallery/3.jpeg" data-lightbox="gallery" data-title="Gallery Image 3">
+                    <img src="assets/img/gallery/3.jpeg" alt="Gallery Image 3">
+                </a>
+            </div>
+            <!-- Imagen 4 -->
+            <div class="gallery-item">
+                <a href="assets/img/gallery/4.jpeg" data-lightbox="gallery" data-title="Gallery Image 4">
+                    <img src="assets/img/gallery/4.jpeg" alt="Gallery Image 4">
+                </a>
+            </div>
+            <!-- Imagen 5 -->
+            <div class="gallery-item">
+                <a href="assets/img/gallery/5.jpeg" data-lightbox="gallery" data-title="Gallery Image 5">
+                    <img src="assets/img/gallery/5.jpeg" alt="Gallery Image 5">
+                </a>
+            </div>
+            <!-- Imagen 6 -->
+            <div class="gallery-item">
+                <a href="/assets/img/gallery/p1.jpeg" data-lightbox="gallery" data-title="Gallery Image 6">
+                    <img src="/assets/img/gallery/p1.jpeg" alt="Gallery Image 6">
+                </a>
+            </div>
+            <!-- Imagen 7 -->
+            <div class="gallery-item">
+                <a href="/assets/img/gallery/p2.jpeg" data-lightbox="gallery" data-title="Gallery Image 7">
+                    <img src="/assets/img/gallery/p2.jpeg" alt="Gallery Image 7">
+                </a>
+            </div>
+            <!-- Imagen 8 -->
+            <div class="gallery-item">
+                <a href="/assets/img/gallery/p3.jpeg" data-lightbox="gallery" data-title="Gallery Image 8">
+                    <img src="/assets/img/gallery/p3.jpeg" alt="Gallery Image 8">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+            
+    <!-- Sección Contacto -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 data-translate="contact-title">Contáctanos</h2>
+            </div>
+    
+            <!-- Formulario de contacto -->
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-translate="form-name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="..." required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" data-translate="form-email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="..." required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message" data-translate="form-message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="..." required></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary" data-translate="form-submit">Enviar Mensaje</button>
+                <div id="form-status"></div>
+            </form>
+           
+
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__about">
+                    <h3 data-translate="footer-about-title">Sobre Nosotros</h3>
+                    <p data-translate="footer-about-desc">En CF CONTRACTING LLC, estamos comprometidos a ofrecer resultados excepcionales con mano de obra de calidad y servicio personalizado.</p>
+                </div>
+                <div class="footer__contact">
+                    <h3 data-translate="footer-contact-title">Información de Contacto</h3>
+                    <p class="tellwasa"><strong>Tel:</strong> <a target="_blank" href="https://wa.link/lzlois">+1 (754) 226-8930</a></p>
+                    <p class="tellwasa"><strong>Email:</strong> <a  href="mailto:cristianfernandezvalerio688@gmail.com">cristianfernandezvalerio688@gmail.com</a></p>
+                    <p><strong>Horario:</strong> Lunes - Sábado: 9:00 - 18:00</p>
+                    <p><strong>Redes:</strong>
+                        <div class="header__social-icons">
+                            <!-- Ícono de TikTok -->
+                            <a href="https://www.tiktok.com/@cristianfernandezval" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <!-- Ícono de WhatsApp -->
+                            <a href="https://wa.link/lzlois" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2023 CF CONTRACTING LLC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/slider.js"></script>
+ <!-- jQuery (requerido por Lightbox) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="/assets/js/servicio.js"></script>
+
+
+</body>
+</html>
